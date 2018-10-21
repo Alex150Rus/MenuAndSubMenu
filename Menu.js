@@ -14,7 +14,7 @@ class Menu {
     result += `</ul>`;
     return result;
     }
-  remove() {
+  removeEl() {
     let el = document.getElementById(this.id);
     if (el){
     return el.parentNode.removeChild(el)
