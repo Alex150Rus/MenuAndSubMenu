@@ -15,8 +15,9 @@ class Menu {
     return result;
     }
   remove() {
-    if (document.getElementById(this.id)){
-    return document.getElementById(this.id).remove()
+    let el = document.getElementById(this.id);
+    if (el){
+    return el.parentNode.removeChild(el)
     }
   }
 }
