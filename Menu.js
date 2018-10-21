@@ -18,6 +18,7 @@ class Menu {
     let el = document.getElementById(this.id);
     if (el){
     return el.parentNode.removeChild(el)
+      // return el.remove() if don't care about IE
     }
   }
 }
