@@ -34,11 +34,7 @@
 
     menu1.innerHTML = menu.render() + deleteButton.render();
 
-  document.getElementById('menuRemover').addEventListener('click', ()=> {
-    if (document.getElementById('my')) {
-    menu.remove();
-    }
-  })
+  document.getElementById('menuRemover').addEventListener('click', ()=> menu.remove());
   }
 </script>
 </body>
